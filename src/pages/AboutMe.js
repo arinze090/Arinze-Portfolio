@@ -67,8 +67,8 @@ const AboutSection = () => {
           <div className="text-center">
             <a
               href="/Sarah-Obarhoro-CV.pdf"
-              download="Sarah-Obarhoro-CV"
-              aria-label="Download Sarah Obarhoro's CV"
+              download="Arinze-Nchor-Nwankwo-CV"
+              aria-label="Download Arinze Nchor-Nwankwo's CV"
               className="border-2 border-gray-600 hover:border-blue-400 text-gray-300 hover:text-blue-400 font-semibold px-8 py-4 rounded-xl transform hover:scale-105 transition-all duration-300"
             >
               Download CV

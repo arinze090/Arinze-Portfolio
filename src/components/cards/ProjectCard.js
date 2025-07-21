@@ -56,7 +56,7 @@ export default function ProjectsCard({ props }) {
         <h2 className="text-3xl md:text-4xl font-bold mt-4 text-white">
           {props.projectName}
         </h2>
-        <p className="text-gray-400 mt-2 text-base">{props.description}</p>
+        <p className="text-gray-400 mt-2 text-base">{props?.description}</p>
       </div>
 
       {/* The Challenge */}
@@ -65,11 +65,7 @@ export default function ProjectsCard({ props }) {
           <h3 className="text-lg font-semibold text-white border-l-4 border-purple-600 pl-4 mb-2">
             The Challenge
           </h3>
-          <p className="text-gray-400">
-            Create a meaningful platform for sharing tributes with sophisticated
-            media handling, real-time interactions, and intuitive content
-            organization.
-          </p>
+          <p className="text-gray-400">{props?.challenge}</p>
         </div>
       )}
 
