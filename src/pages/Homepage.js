@@ -2,6 +2,7 @@ import { achievements, projectsData, techStack } from "../data/dummyData";
 import ProjectsCard from "../components/cards/ProjectCard";
 import { Link } from "react-router-dom";
 import SocialLinks from "../components/common/SocialLinks";
+import ArinzeLogo from "../assets/images/arinze.png";
 
 const HomePage = () => {
   const hireMe = () => {
@@ -43,7 +44,7 @@ const HomePage = () => {
 
               <p className="summary text-gray-300 text-lg sm:text-xl leading-relaxed max-w-2xl">
                 Lead Software Engineer with{" "}
-                <span className="text-blue-400 font-semibold">4+ years</span>{" "}
+                <span className="text-blue-400 font-semibold">5+ years</span>{" "}
                 architecting high-performance web and mobile applications.
                 Expert in JavaScript ecosystems & team leadership.
               </p>
@@ -54,9 +55,6 @@ const HomePage = () => {
                   className="cta-button bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-blue-500/25"
                 >
                   Hire Me
-                </button>
-                <button className="border-2 border-gray-600 hover:border-blue-400 text-gray-300 hover:text-blue-400 font-semibold px-8 py-4 rounded-xl transform hover:scale-105 transition-all duration-300">
-                  View Portfolio
                 </button>
               </div>
             </div>
@@ -82,17 +80,17 @@ const HomePage = () => {
                   style={{ animation: "float 6s ease-in-out infinite" }}
                 >
                   <div className="relative">
-                    <img
-                      src="/assets/images/arinze.png"
-                      alt="Profile"
-                      className="profile-image w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full object-cover border-4 border-white/10 shadow-2xl hover:scale-105 transition-transform duration-500"
-                    />
                     <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400/20 to-purple-400/20 blur-xl animate-pulse"></div>
                   </div>
                 </div>
 
                 {/* Orbiting circles */}
                 <div className="circle-container absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  <img
+                    src={ArinzeLogo}
+                    alt="Profile"
+                    className="profile-image w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full object-cover border-4 border-white/10 shadow-2xl hover:scale-105 transition-transform duration-500"
+                  />
                   <div
                     className="orbiting-circle absolute w-4 h-4 bg-blue-500 rounded-full shadow-lg"
                     style={{ animation: "orbit 20s linear infinite" }}
@@ -128,17 +126,19 @@ const HomePage = () => {
                   impact.
                   <br />
                   <br />
-                  With 4+ years of experience driving full-stack development,
+                  With 5+ years of experience driving full-stack development,
                   I’ve led cross-functional teams to deliver performant,
                   user-centric applications—cutting time-to-market by 60% and
                   increasing engagement by 65% across diverse industries.
                   <br />
                   <br />
-                  My foundation in English & Literary Studies gives me a unique
-                  edge in tech leadership: blending sharp analytical thinking,
-                  empathy-driven design, and strong communication. I thrive at
-                  the intersection of strategy and execution—translating complex
-                  challenges into simple, elegant digital solutions.
+                  With a foundation in Civil Engineering, I bring a rare blend of analytical rigor,
+                  human-centered design, and clear communication to tech
+                  leadership. I thrive at the intersection of strategy and
+                  execution, transforming complex challenges into simple,
+                  impactful digital solutions. My diverse background enables me
+                  to lead with empathy, think critically, and build products
+                  that resonate.
                 </p>
               </div>
             </div>

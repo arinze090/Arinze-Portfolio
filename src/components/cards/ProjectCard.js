@@ -148,7 +148,7 @@ export default function ProjectsCard({ props }) {
       {/* Buttons */}
       <div className="flex flex-wrap gap-4 mt-4">
         <a
-          href={props.projectLinks[0].websiteLink}
+          href={props?.projectLinks[0]?.websiteLink}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 bg-gradient-to-r from-pink-500 to-purple-600 hover:opacity-90 text-white px-5 py-2 rounded-full text-sm font-semibold transition duration-200"
@@ -156,9 +156,9 @@ export default function ProjectsCard({ props }) {
           <Eye size={16} />
           View Live Demo
         </a>
-        {props.projectLinks[0].iosApp && (
+        {props?.projectLinks[0]?.iosApp && (
           <a
-            href="https://apps.apple.com/yourapp"
+            href={props?.projectLinks[0]?.iosApp}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-white px-5 py-2 rounded-full text-sm font-semibold transition duration-200"
@@ -169,7 +169,7 @@ export default function ProjectsCard({ props }) {
         )}
         {props.projectLinks[0].androidApp && (
           <a
-            href="https://play.google.com/store/apps/details?id=yourapp"
+            href={props?.projectLinks[0]?.androidApp}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-white px-5 py-2 rounded-full text-sm font-semibold transition duration-200"
