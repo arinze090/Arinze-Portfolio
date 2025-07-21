@@ -46,7 +46,7 @@ export const projectsData = [
   },
   {
     id: 2,
-    projectName: "Singnify Inc (Formerly NextXtar Inc)",
+    projectName: "Singnify (Formerly NextXtar)",
     category: "Entertainment",
     description:
       "Distribute your music globally for free to 100+ digital stores like iTunes, Spotify, Amazon, and more — with unlimited promotion, real-time royalties, licensing support, PR, fan links in 48 hours, and 100% rights ownership, all with free registration.",
@@ -54,24 +54,32 @@ export const projectsData = [
     solution: "",
     keyFeatures: [
       {
-        label: "Smart matchmaking",
-        icon: "HeartHandshake", // 💘 thoughtful connection
+        label: "Global Distribution",
+        icon: "Globe",
       },
       {
-        label: "Marketplace",
-        icon: "ShoppingBag", // 🛍️ clean e-commerce visual
+        label: "Unlimited Promotion",
+        icon: "Megaphone",
       },
       {
-        label: "Coaching & Therapy",
-        icon: "UserCog", // 🧠 personal growth & professional support
+        label: "Real-Time Royalties",
+        icon: "BarChart3",
       },
       {
-        label: "Travel & Events",
-        icon: "Plane", // ✈️ travel + experiences
+        label: "100% Rights Ownership",
+        icon: "ShieldCheck",
       },
       {
-        label: "Gifting hub",
-        icon: "Gift", // 🎁 simple and direct
+        label: "Licensing Support",
+        icon: "FileCheck2",
+      },
+      {
+        label: "PR & Fan Links",
+        icon: "Link",
+      },
+      {
+        label: "Free Registration",
+        icon: "BadgeCheck",
       },
     ],
     technologyStack: ["React (Web Application)", "React Native (Mobile-App)"],
