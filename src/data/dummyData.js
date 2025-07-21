@@ -6,7 +6,7 @@ export const projectsData = [
     description:
       "Rendezvouscare elevates your wellness journey with a curated collection of luxury services, designed to pamper your mind, body, and soul. Our sophisticated matching algorithms connect you with the perfect wellness professionals, whether you seek a transformative life coach, a calming therapist, or a personalized fitness plan. Effortlessly book your sessions, manage your appointments, and track your progress through our seamless platform.",
     challenge: "",
-    solution: "",
+    solutions: [],
     keyFeatures: [
       {
         label: "Smart matchmaking",
@@ -51,7 +51,7 @@ export const projectsData = [
     description:
       "Distribute your music globally for free to 100+ digital stores like iTunes, Spotify, Amazon, and more — with unlimited promotion, real-time royalties, licensing support, PR, fan links in 48 hours, and 100% rights ownership, all with free registration.",
     challenge: "",
-    solution: "",
+    solutions: [],
     keyFeatures: [
       {
         label: "Global Distribution",
@@ -165,8 +165,7 @@ export const projectsData = [
       "Shoutty empowers users to monetize their social influence by connecting fans and followers with creators and public figures. Whether you're an aspiring creator or a public personality, Shoutty helps you earn by offering shout-outs, exclusive content, or direct engagement through a streamlined, interactive platform.",
     challenge:
       "In a saturated creator economy, influencers often struggle to monetize engagement in meaningful ways. Fans, on the other hand, want more authentic and personalized ways to connect with creators beyond traditional social platforms.",
-    solution:
-      "Shoutty bridges this gap by providing a two-way platform where creators can earn directly from fans by offering shout-outs and exclusive interactions. The platform simplifies discovery, booking, and content delivery in a seamless mobile-first experience.",
+    solutions: [],
     keyFeatures: [
       {
         label: "Creator Marketplace",
@@ -212,9 +211,8 @@ export const projectsData = [
     description:
       "Pindogo is an AI-powered social platform designed for modern creators, entrepreneurs, and professionals. It offers community building, educational content, networking tools, and monetization features—empowering users to connect, grow, and succeed digitally.",
     challenge: "",
-    solution: "",
+    solutions: [],
     keyFeatures: [
-      //   { label: "AI‑Driven Connections", icon: "UserStar" },
       { label: "Pindogo Academy", icon: "BookOpen" },
       { label: "Creator Networking", icon: "Users" },
       { label: "Content Tools", icon: "Edit" },

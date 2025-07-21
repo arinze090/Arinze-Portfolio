@@ -19,6 +19,12 @@ import {
   Megaphone,
   Video,
   Sparkles,
+  Globe,
+  ShieldCheck,
+  FileCheck2,
+  Link,
+  BadgeCheck,
+  BarChart3,
 } from "lucide-react";
 import { FaApple } from "react-icons/fa";
 import { SiGoogleplay } from "react-icons/si";
@@ -43,9 +49,17 @@ const iconMap = {
   Megaphone,
   Video,
   Sparkles,
+  Globe,
+  ShieldCheck,
+  FileCheck2,
+  Link,
+  BadgeCheck,
+  BarChart3,
 };
 
 export default function ProjectsCard({ props }) {
+  console.log("propsss", props);
+
   return (
     <div className="group mb-4 bg-[#0f0f0f] text-white rounded-3xl border border-indigo-500/20 p-6 md:p-10 max-w-7xl mx-auto shadow-md hover:shadow-2xl hover:border-purple-500/30 transition-all duration-300">
       {/* Header */}
@@ -70,7 +84,7 @@ export default function ProjectsCard({ props }) {
       )}
 
       {/* The Solution */}
-      {props?.solutions?.length && (
+      {props?.solutions && props?.solutions?.length ? (
         <div className="mb-10">
           <h3 className="text-lg font-semibold text-white border-l-4 border-purple-600 pl-4 mb-4">
             The Solution
@@ -91,26 +105,28 @@ export default function ProjectsCard({ props }) {
             })}
           </div>
         </div>
-      )}
+      ) : null}
 
       {/* Key Features */}
-      <div className="mb-10 hidden md:block">
-        <h3 className="text-lg font-semibold text-white border-l-4 border-purple-600 pl-4 mb-4">
-          Key Features
-        </h3>
-        <div className="flex flex-wrap gap-3">
-          {props.keyFeatures.map((cur, i) => {
-            const LucideIcon = iconMap[cur.icon];
-            return (
-              <FeatureTag
-                key={i}
-                icon={<LucideIcon size={16} />}
-                label={cur.label}
-              />
-            );
-          })}
+      {props?.keyFeatures && props?.keyFeatures?.length ? (
+        <div className="mb-10 hidden md:block">
+          <h3 className="text-lg font-semibold text-white border-l-4 border-purple-600 pl-4 mb-4">
+            Key Features
+          </h3>
+          <div className="flex flex-wrap gap-3">
+            {props?.keyFeatures?.map((cur, i) => {
+              const LucideIcon = iconMap[cur?.icon];
+              return (
+                <FeatureTag
+                  key={i}
+                  icon={<LucideIcon size={16} />}
+                  label={cur?.label}
+                />
+              );
+            })}
+          </div>
         </div>
-      </div>
+      ) : null}
 
       {/* Tech Stack */}
       <div className="mb-10 hidden md:block">
@@ -118,7 +134,7 @@ export default function ProjectsCard({ props }) {
           Technology Stack
         </h3>
         <div className="flex flex-wrap gap-2">
-          {props.technologyStack.map((tech, i) => (
+          {props?.technologyStack?.map((tech, i) => (
             <span
               key={i}
               className="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-sm font-medium transition duration-200 hover:bg-gray-700 hover:text-white"

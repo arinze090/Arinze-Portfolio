@@ -157,7 +157,7 @@ const HomePage = () => {
           </p>
         </div>
 
-        {projectsData.slice(0, 3).map((cur, i) => (
+        {projectsData?.slice(0, 3)?.map((cur, i) => (
           <ProjectsCard key={i} props={cur} />
         ))}
 
